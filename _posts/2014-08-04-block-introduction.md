@@ -7,7 +7,8 @@ title: block 相关
 ================
 <p class="meta">4 August 2014 - tony cap</p>
 
-* 目录：
+* 目录：   
+
 ```
 1.Block简介
 2.Block的创建
@@ -214,7 +215,8 @@ typedef double (^SpeedFunction)(double);
 ###总结
 Block不仅提供了C函数同样的功能，而且block看起来更加直观。block可以定义为内联(inline)，这样在函数内部调用的时候就非常方便，由于block具有闭包性(closure)，所以block可以很容易获得上下文信息，而又不会对这些数据产生负面影响。
  
-延伸阅读
+延伸阅读  
+
 ```
 "Discuss this post on Hacker News": http://news.ycombinator.com/item?id=2384320
 
@@ -226,6 +228,7 @@ Block不仅提供了C函数同样的功能，而且block看起来更加直观。
 
 "Closure and anonymous functions in Objective-C": http://www.xs-labs.com/en/archives/articles/objc-blocks/
 ```
+
 来源：破船的博客
 
 
