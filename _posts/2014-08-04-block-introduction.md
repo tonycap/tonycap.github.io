@@ -213,13 +213,15 @@ typedef double (^SpeedFunction)(double);
 Block不仅提供了C函数同样的功能，而且block看起来更加直观。block可以定义为内联(inline)，这样在函数内部调用的时候就非常方便，由于block具有闭包性(closure)，所以block可以很容易获得上下文信息，而又不会对这些数据产生负面影响。
  
 延伸阅读
-```
 "Discuss this post on Hacker News":http://news.ycombinator.com/item?id=2384320
+
 "A look inside blocks: Episode 1":http://www.galloway.me.uk/2012/10/a-look-inside-blocks-episode-1/
+
 "A look inside blocks: Episode 2":http://www.galloway.me.uk/2012/10/a-look-inside-blocks-episode-2/
+
 "A look inside blocks: Episode 3 (Block_copy)":http://www.galloway.me.uk/2013/05/a-look-inside-blocks-episode-3-block-copy/
+
 "Closure and anonymous functions in Objective-C":http://www.xs-labs.com/en/archives/articles/objc-blocks/
-```
 来源：破船的博客
 
 
