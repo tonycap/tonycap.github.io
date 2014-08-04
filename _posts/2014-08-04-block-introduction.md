@@ -84,6 +84,8 @@ NSLog(@"%@", getFullCarName(@"Accord"));    // Honda Accord
  
 非局部变量会以const变量被拷贝并存储到block中，也就是说block对其是只读的。如果尝试在block内部给make变量赋值，会抛出编译器错误。
 
+ <img src="/images/20140804_block_1.png" alt="block closure"/>
+
 以const拷贝的方式访问非局部变量，意味着block实际上并不是真正的访问了非局部变量——只不过在block中创建了非局部变量的一个快照。当定义block时，无论非局部变量的值是什么，都将被冻结，并且block会一直使用这个值，即使在之后的代码中修改了非局部变量的值。下面通过代码来看看，在创建好block之后，修改make变量的值，会发生什么：
 ```
 NSString *make = @"Honda"; 
@@ -103,7 +105,7 @@ block的闭包性为block与上下文交互的时候带来极大的便利性，�
 冻结中的非局部变量是一个常量值，这也是一种默认的安全行为——因为这可以防止在block中的代码对非局部变量做了意外的修改。那么如果我们希望在block中对非局部变量值进行修改要如何做呢——用__block存储修饰符(storage modifier)来声明非局部变量：
 __block NSString *make = @"Honda"; 
 这将告诉block对非局部变量做引用处理，在block外部make变量和内部的make变量创建一个直接的链接(direct link)。现在就可以在block外部修改make，然后反应到block内部，反过来，也是一样。
- 
+ <img src="/images/20140804_block_2.png" alt="modify local var"/>
 
 通过引用的方式访问非局部变量
 这跟普通函数中的静态局部变量(static local variable)类似，用__block修饰符声明的变量可以记录着block多次调用的结果。例如下面的代码创建了一个block，在block中对i进行累加。
