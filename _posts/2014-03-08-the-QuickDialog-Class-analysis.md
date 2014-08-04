@@ -46,7 +46,7 @@ QSortingSection：自动在sections中对cells进行排序。
 在QuickDialog中自定义了一部分的UITableViewCell，来对应于定义的elements。其结构如下：
 <img src="/images/20140308_quickdialog_3.png" alt="the custom UITableViewCell"/>
 
-<h3>四 关于QuickDialog的使用<h3>
+<h3>四 关于QuickDialog的使用</h3>
 集成QucikDialog到项目中\n 最简单的方法是把quickDialog作为git子模块添加到你的现有工程中，然后作为一部分导入到project中。 Terminal：
 
 cd your-project-location git submodule add git@github.com:escoz/QuickDialog.git
