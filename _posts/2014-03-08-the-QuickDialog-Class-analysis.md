@@ -42,7 +42,7 @@ headerView/footerView：这种情况下，Views可以替换掉titles的显示，
 QRadioSection：内联的显示多个选项，而不是到另一个UIViewController中。
 QSortingSection：自动在sections中对cells进行排序。
 
-<h3>三 关于自定义的UITableViewCell<h3>
+<h3>三 关于自定义的UITableViewCell</h3>
 在QuickDialog中自定义了一部分的UITableViewCell，来对应于定义的elements。其结构如下：
 <img src="/images/20140308_quickdialog_3.png" alt="the custom UITableViewCell"/>
 
@@ -79,7 +79,7 @@ UINavigationController *navigation = [QuickDialogController controllerWithNaviga
 The code above will create the form below:
 <img src="/images/20140308_quickdialog_4.png" alt="the custom UITableViewCell"/>
 
-<h3>五：QuickDialog的数据交互<h3>
+<h3>五：QuickDialog的数据交互</h3>
 由于QuickDialog是通过对数据的封装实现对UI的控制的，所以要获得数据的话有两种方式，一种是直接通过elements的属性获取，一种是通过bind的对应键值来使用fetchValueUsingBindingsIntoObject来拉去的。这样的话必须bind中的key与放入对象的attribute的名称要一直，否则会拉去不到crash。
 
 对QuickDialogTableView的点击事件可以直接设置block来进行控制，这样较容易控制的。
