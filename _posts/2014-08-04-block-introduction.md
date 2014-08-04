@@ -8,7 +8,7 @@ title: block 相关
 <p class="meta">4 August 2014 - tony cap</p>
 
 * 目录：   
-
+===============
 ```
 1.Block简介
 2.Block的创建
@@ -20,7 +20,7 @@ title: block 相关
 8.总结
 延伸阅读
 ```
-
+==============
 * 正文
 
 ## Block简介
@@ -218,15 +218,12 @@ Block不仅提供了C函数同样的功能，而且block看起来更加直观。
 延伸阅读  
 
 ```
-"Discuss this post on Hacker News": http://news.ycombinator.com/item?id=2384320
-
-"A look inside blocks: Episode 1": http://www.galloway.me.uk/2012/10/a-look-inside-blocks-episode-1/
-
-"A look inside blocks: Episode 2": http://www.galloway.me.uk/2012/10/a-look-inside-blocks-episode-2/
-
-"A look inside blocks: Episode 3 (Block_copy)": http://www.galloway.me.uk/2013/05/a-look-inside-blocks-episode-3-block-copy/
-
-"Closure and anonymous functions in Objective-C": http://www.xs-labs.com/en/archives/articles/objc-blocks/
+<a url="http://news.ycombinator.com/item?id=2384320">Discuss this post on Hacker News</a>
+<a url="http://www.galloway.me.uk/2012/10/a-look-inside-blocks-episode-1/">A look inside blocks: Episode 1</a>
+<a url="http://www.galloway.me.uk/2012/10/a-look-inside-blocks-episode-2/">A look inside blocks: Episode 2</a>
+<a url="http://www.galloway.me.uk/2013/05/a-look-inside-blocks-episode-3-block-copy/">A look inside blocks: Episode 3 (Block_copy)</a>
+<a url="http://www.xs-labs.com/en/archives/articles/objc-blocks/">Closure and anonymous functions in Objective-C</a>
+ 
 ```
 
 来源：破船的博客
