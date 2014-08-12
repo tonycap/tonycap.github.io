@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 深度围观block：第一,二集
+title: 深度围观block：第一集
 ---
 
 ##深度围观block：第一集
@@ -158,8 +158,9 @@ Cool！上面的汇编代码看起来像是一个结构体。在结构体中又5
 	};
 
 这看起来很熟悉吧！其中Block_layout结构体就是
-**___block_literal_global** ，而**Block_descriptor**结构体则是**__block_descriptor_tmp**。细看Block_descriptor中的第2个变量size正如我之前描述的一样(表示___block_literal_global的大小)。在Block_descriptor中的第3和第4个值有点奇怪。这看起来有点想函数指针，但是在上面的汇编代码中看起来更像是两个字符串。现在我忽略掉这个细节。
-Block_layout中的isa肯定就是__NSConcreteGlobalBlock，这也将确定block如何能够模拟Objective-C对象。如果__NSConcreteGlobalBlock是一个Class，那么Objective-C消息派送系统会将block对象当做一个普通的对象来处理。这跟如何处理toll-free bridging工作类似。更多相关toll-free bridging信息，可以阅读Mike Ash写的[一篇优秀文章](https://mikeash.com/pyblog/friday-qa-2010-01-22-toll-free-bridging-internals.html)。
+**___block_literal_global** ，而**Block_descriptor**结构体则是**__block_descriptor_tmp** 。细看 **Block_descriptor**中的第2个变量size正如我之前描述的一样(表示___block_literal_global的大小)。在Block_descriptor中的第3和第4个值有点奇怪。这看起来有点想函数指针，但是在上面的汇编代码中看起来更像是两个字符串。现在我忽略掉这个细节。
+Block_layout 中的isa肯定就是
+** __NSConcreteGlobalBlock**，这也将确定block如何能够模拟Objective-C对象。如果__NSConcreteGlobalBlock是一个Class，那么Objective-C消息派送系统会将block对象当做一个普通的对象来处理。这跟如何处理toll-free bridging工作类似。更多相关toll-free bridging信息，可以阅读Mike Ash写的[一篇优秀文章](https://mikeash.com/pyblog/friday-qa-2010-01-22-toll-free-bridging-internals.html)。
 将所有的代码片段拼凑起来，编译器做的工作内容看起来如下所示：
 
 	#import <dispatch/dispatch.h>
