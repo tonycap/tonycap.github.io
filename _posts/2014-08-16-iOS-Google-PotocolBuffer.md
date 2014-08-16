@@ -119,7 +119,9 @@ protoc --proto_path=srcFolder --objc_out=desFolder
         }
     }
 ```
+
 输出打印的结果如下：
+
 ```
 2014-08-16 11:46:15.502 protocol[18670:60b] 
  id 1 
